@@ -1,0 +1,71 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    z-index: 1000;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#logo-svg{
+    width: 800px;
+}
+
+#purple-grouped{
+    transition: fill 0.3s ease, transform 0.3s ease, opacity 0.5s ease;
+    fill: url(#neonGradient);
+}
+
+#nightlife-grouped{
+    fill: whitesmoke;
+}
+
+@keyframes animateGradient {
+    0% {
+        stop-color: #FF00FF;
+        opacity: 1;
+    }
+    25% {
+        stop-color: #0d00ff;
+        opacity: 0.2;
+    }
+    50% {
+        stop-color: #FF0000;
+        opacity: 1;
+    }
+    75%{
+        stop-color: #0d00ff;
+        opacity: 0.2;
+    }
+    100%{
+        stop-color: #FF00FF;
+        opacity: 1;
+    }
+}
+
+#neonGradient stop{
+    animation: animateGradient 5s linear infinite;
+}
+
+@keyframes thump{
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.027);
+    }
+}
+
+.thumping{
+    animation: thump 2s infinite;
+}
