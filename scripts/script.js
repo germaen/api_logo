@@ -17,7 +17,7 @@ async function getData() {
     }
 
     function thumpFx(temp, hour) {
-        const nightTime = (hour >= 0 || hour < 2);  
+        const nightTime = (hour >= 20 || hour < 6); 
         const thumpingCondition = (temp >= 40 && temp <= 90 && nightTime);
 
         if (thumpingCondition) {
