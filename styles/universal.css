@@ -53,8 +53,46 @@ html, body{
     }
 }
 
+@keyframes animateGradient2 {
+    0% {
+        stop-color: #FF6600;
+    }
+    25% {
+        stop-color: #FFFF00;
+    }
+    50% {
+        stop-color: #FF00FF;
+    }
+    75% {
+        stop-color: #FFFF00;
+    }
+    100% {
+        stop-color: #FF6600;
+    }
+}
+
+@keyframes animateGradient3 {
+    0% {
+        stop-color: #ffffff;
+    }
+    50% {
+        stop-color: #000000;
+    }
+    100% {
+        stop-color: #ffffff;
+    }
+}
+
 #neonGradient stop{
     animation: animateGradient 5s linear infinite;
+}
+
+.neonGradient2 {
+    animation: animateGradient2 5s linear infinite;
+}
+
+.neonGradient3 {
+    animation: animateGradient3 5s linear infinite;
 }
 
 @keyframes thump{
